@@ -1,0 +1,46 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+  then
+    echo "No argument supplied. Give me the name of the homework directory."
+    echo "Example:"
+    echo "   $0 hw_1_linked_lists"
+    echo "Try to keep to the Python-like syntax using underscores and no caps."
+else
+    echo "Creating homework assignment $1..."
+    cp -Rv template $1
+    echo ""
+    echo "All:"
+    echo "  - Edit $1/description-common.json to have correct values."
+    echo "  - Ensure point values total to correct amount e.g. (2270 = 15, 1300 = 10)"
+
+    echo "C++:"
+    echo "  - Copy assignment header file and null implementation file(s) to cpp/."
+    echo "  - Remove linked_list.h and linked_list.cpp (they are examples only)."
+    echo "  - Edit top part of cpp/Makefile to hold correct file names."
+    echo "  - Rename linked_list_test.cpp to appropriate your unit test name."
+    echo "  - Edit unit test cpp (was linked_list_test.cpp0 so it has exactly the"
+    echo "        same tests mentioned in the description-common.json file."
+    echo "  - Edit $1/cpp/description.json such that:"
+    echo "    * The build command is reasonable (probably ok as is)"
+    echo "    * The unit_test_command matches your unit test name (the ./ is needed)"
+    echo "    * The instructor_files includes your files (keep Makefile/RetroPrinter)"
+    echo "    * The student_files matches the null implementation filename(s)."
+
+    echo "Java:"
+    echo "  - Copy assignment interface file and null impl file(s) to java/."
+    echo "  - Rename LinkedListTest.java to your unit test name."
+    echo "  - Remove LinkedListInterface.java (it is an example only)"
+    echo "  - Remove Node.java (it is a stand-in for necessary data structures)"
+    echo "  - Edit your unit test Java source so it has exactly the same tests"
+    echo "        mentioned in the description-common.json file."
+    echo "  - Edit $1/java/description.json similarly as for C++, but for Java. Make"
+    echo "        sure the junit jar and '.' are in the classpath."
+
+    echo "Python:"
+    echo "  - Rename linked_list_test.py as appropriate."
+    echo "  - Edit $1/py/description.py as above."
+    echo ""
+    echo "Files copied. Use the above checklist for moral support."
+fi
+# cp -R

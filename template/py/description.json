@@ -1,0 +1,11 @@
+{
+    "lang" : "py",
+    "build_command" : "",
+    "unit_test_command" : "python linked_list_test.py",
+    "instructor_files" : [
+        "linked_list_test.py"
+    ],
+    "student_files" : [
+        "linked_list.py"
+    ]
+}

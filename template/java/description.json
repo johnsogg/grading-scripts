@@ -1,0 +1,14 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. LinkedList.java LinkedListTest.java",
+    "unit_test_command" : "java -classpath junit.jar:. LinkedListTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "LinkedListInterface.java",
+        "LinkedListTest.java",
+        "Node.java"
+    ],
+    "student_files" : [
+        "LinkedList.java"
+    ]
+}

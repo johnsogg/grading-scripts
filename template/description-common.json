@@ -1,0 +1,10 @@
+{
+    "assignment" : "Put Human-readable assignment name here",
+    "points" : { /* point keys are CamelCaseStrings, values are small ints like 1 or 3 */
+	"FirstThing": 1,
+	"OtherThing" : 2,
+	"HavingFun" : 1,
+	"Penultimate" : 3,
+	"LastIsWothMost" : 4 /* careful to not have a comma here */
+    }
+}
