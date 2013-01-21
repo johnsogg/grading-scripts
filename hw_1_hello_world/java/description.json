@@ -1,6 +1,6 @@
 {
     "lang" : "java",
-    "build_command" : "javac -classpath junit.jar:. Hello.java HelloTest.java",
+    "build_command" : "javac -classpath junit.jar:. hello.java HelloTest.java",
     "unit_test_command" : "java -classpath junit.jar:. HelloTest",
     "instructor_files" : [
 	"RetroPrinter.java",
