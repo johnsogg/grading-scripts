@@ -1,10 +1,10 @@
 # This top block is all you will probably need to change
-STUDENT_IMPL_FILE 	= linked_list.cpp
-STUDENT_OBJ_FILE 	= linked_list.o
-PRIMARY_HEADER_FILE 	= linked_list.h
-UNIT_TEST_IMPL_FILE 	= linked_list_test.cpp
-UNIT_TEST_OBJ_FILE 	= linked_list_test.o
-UNIT_TEST_BINARY 	= linked_list_test
+STUDENT_IMPL_FILE 	= hello.cpp
+STUDENT_OBJ_FILE 	= hello.o
+PRIMARY_HEADER_FILE 	= hello.h
+UNIT_TEST_IMPL_FILE 	= hello_test.cpp
+UNIT_TEST_OBJ_FILE 	= hello_test.o
+UNIT_TEST_BINARY 	= hello_test
 
 # Points to the root of Google Test
 GTEST_DIR = /usr/local/gtest-1.6.0
@@ -17,7 +17,7 @@ GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h \
 
 # House-keeping build targets.
 
-all : $(UNIT_TEST_BINARY)
+all : $(STUDENT_OBJ_FILE) $(UNIT_TEST_BINARY)
 
 clean :
 	rm -f $(TESTS) *.o $(UNIT_TEST_BINARY)
@@ -38,6 +38,6 @@ $(UNIT_TEST_OBJ_FILE) : $(USER_DIR)/$(UNIT_TEST_IMPL_FILE) \
                      $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/$(UNIT_TEST_IMPL_FILE)
 
-$(UNIT_TEST_BINARY) : $(STUDENT_OBJ_FILE) $(UNIT_TEST_OBJ_FILE) RetroPrinter.o \
+$(UNIT_TEST_BINARY) : $(UNIT_TEST_OBJ_FILE) RetroPrinter.o \
 		   $(GTEST_LIB)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@

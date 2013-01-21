@@ -1,0 +1,6 @@
+{
+    "assignment" : "Hello World",
+    "points" : { 
+	"HelloWorld" : 10 
+    }
+}

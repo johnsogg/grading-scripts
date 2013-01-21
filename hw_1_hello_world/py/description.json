@@ -1,0 +1,11 @@
+{
+    "lang" : "py",
+    "build_command" : "",
+    "unit_test_command" : "python hello_test.py",
+    "instructor_files" : [
+        "hello_test.py"
+    ],
+    "student_files" : [
+        "hello.py"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./hello_test",
+    "instructor_files" : [
+	"Makefile",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"hello_test.cpp"
+    ],
+    "student_files" : [
+        "hello.cpp"
+    ]
+}
