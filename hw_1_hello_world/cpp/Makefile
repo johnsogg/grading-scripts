@@ -40,4 +40,4 @@ $(UNIT_TEST_OBJ_FILE) : $(USER_DIR)/$(UNIT_TEST_IMPL_FILE) \
 
 $(UNIT_TEST_BINARY) : $(UNIT_TEST_OBJ_FILE) RetroPrinter.o \
 		   $(GTEST_LIB)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -pthread $^ -o $@
