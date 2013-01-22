@@ -1,0 +1,15 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./linked_list_test",
+    "instructor_files" : [
+	"Makefile",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"linked_list.h",
+	"linked_list_test.cpp"
+    ],
+    "student_files" : [
+        "linked_list.cpp"
+    ]
+}
