@@ -75,16 +75,16 @@ public class LinkedListTest {
 
     @Test 
     public void testInsertData() {
-	list.insertData(0, 10); // 10
+	list.insertData(0, 10);   // 10
 	expectReport(list.report(), "10");
-	list.insertData(0, 7); // 7 10
+	list.insertData(0, 7);    // 7 10
 	expectReport(list.report(), "7 10");
-	list.insertData(1, 9); // 7 9 10
+	list.insertData(1, 9);    // 7 9 10
 	expectReport(list.report(), "7 9 10");
-	list.insertData(1, 8); // 7 8 9 10
+	list.insertData(1, 8);    // 7 8 9 10
 	expectReport(list.report(), "7 8 9 10");
-	list.insertData(3, 11); // 7 8 9 10 11
-	expectReport(list.report(), "7 8 9 10 11");
+	list.insertData(3, 11);   // 7 8 9 11 10   -- thanks Nicholas for finding a bug here
+	expectReport(list.report(), "7 8 9 11 10");
     }
 
     @Test 
@@ -97,8 +97,8 @@ public class LinkedListTest {
 	expectReport(list.report(), "7 9 10");
 	list.insert(1, list.initNode(8)); // 7 8 9 10
 	expectReport(list.report(), "7 8 9 10");
-	list.insert(3, list.initNode(11)); // 7 8 9 10 11
-	expectReport(list.report(), "7 8 9 10 11");
+	list.insert(3, list.initNode(11)); // 7 8 9 11 10 -- and here
+	expectReport(list.report(), "7 8 9 11 10");
     }
 
     @Test 
