@@ -15,11 +15,11 @@ public class LinkedListTest {
 
     Node buildThreeNodeList(int one, int two, int three) {
 	Node top = new Node();
-	top.data = one;
+	top.value = one;
 	top.next = new Node();
-	top.next.data = two;
+	top.next.value = two;
 	top.next.next = new Node();
-	top.next.next.data = three;
+	top.next.next.value = three;
 	top.next.next.next = null;
 	return top;
     }
@@ -32,7 +32,7 @@ public class LinkedListTest {
     @Test 
     public void testInitNode() {
 	Node top = list.initNode(1);
-	assertEquals(1, top.data);
+	assertEquals(1, top.value);
 	assertTrue(top.next == null);
     }
 
