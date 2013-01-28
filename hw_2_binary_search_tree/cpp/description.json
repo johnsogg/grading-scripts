@@ -1,0 +1,15 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./binary_search_tree_test",
+    "instructor_files" : [
+	"Makefile",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"binary_search_tree.h",
+	"binary_search_tree_test.cpp"
+    ],
+    "student_files" : [
+        "binary_search_tree.cpp"
+    ]
+}

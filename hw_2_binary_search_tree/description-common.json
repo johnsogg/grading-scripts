@@ -1,0 +1,13 @@
+{
+    "assignment" : "Binary Search Tree",
+    "points" : { 
+	"InitializeNode": 1,
+	"Insert" : 3,
+	"InsertData" : 1,
+	"Size" : 1,
+	"Contains" : 2,
+	"GetNode" : 2,
+	"Remove" : 3,
+	"ToArray" : 2
+    }
+}
