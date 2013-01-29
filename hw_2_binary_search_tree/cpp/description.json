@@ -1,13 +1,13 @@
 {
     "lang" : "cpp",
     "build_command" : "make",
-    "unit_test_command" : "./binary_search_tree_test",
+    "unit_test_command" : "./binary_search_tree_driver --retrograde",
     "instructor_files" : [
 	"Makefile",
-	"RetroPrinter.cpp",
-	"RetroPrinter.h",
+	"UTFramework.cpp",
+	"UTFramework.h",
 	"binary_search_tree.h",
-	"binary_search_tree_test.cpp"
+	"binary_search_tree_driver.cpp"
     ],
     "student_files" : [
         "binary_search_tree.cpp"

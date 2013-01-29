@@ -2,18 +2,16 @@
 STUDENT_IMPL_FILE 	= binary_search_tree.cpp
 STUDENT_OBJ_FILE 	= binary_search_tree.o
 PRIMARY_HEADER_FILE 	= binary_search_tree.h
-UNIT_TEST_IMPL_FILE 	= binary_search_tree_test.cpp
-UNIT_TEST_OBJ_FILE 	= binary_search_tree_test.o
-UNIT_TEST_BINARY 	= binary_search_tree_test
+UNIT_TEST_IMPL_FILE 	= binary_search_tree_driver.cpp
+UNIT_TEST_OBJ_FILE 	= binary_search_tree_driver.o
+UNIT_TEST_BINARY 	= binary_search_tree_driver
 
-# Points to the root of Google Test
-GTEST_DIR = /usr/local/gtest-1.6.0
-GTEST_LIB = $(GTEST_DIR)/make/gtest_main.a
+# Other object files needed in building targets for unit testing
+FRAMEWORK_TARGETS	= UTFramework.o
+
 USER_DIR = .
 CPPFLAGS += -I$(GTEST_DIR)/include
 CXXFLAGS += -g -Wall -Wextra
-GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h \
-	$(GTEST_DIR)/include/gtest/internal/*.h
 
 # House-keeping build targets.
 
@@ -22,22 +20,22 @@ all : $(UNIT_TEST_BINARY)
 clean :
 	rm -f $(TESTS) *.o $(UNIT_TEST_BINARY)
 
-RetroPrinter.o : $(USER_DIR)/RetroPrinter.cpp \
-                 $(GTEST_HEADERS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/RetroPrinter.cpp
-
 # Assignment-specific build rules below.
+
+UTFramework.o: $(USER_DIR)/UTFramework.cpp	\
+                 $(USER_DIR)/UTFramework.h
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/UTFramework.cpp
 
 $(STUDENT_OBJ_FILE): $(USER_DIR)/$(STUDENT_IMPL_FILE) \
                 $(USER_DIR)/$(PRIMARY_HEADER_FILE) \
-                $(GTEST_HEADERS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/$(STUDENT_IMPL_FILE)
+                $(FRAMEWORK_TARGETS)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/$(STUDENT_IMPL_FILE) -o $(STUDENT_OBJ_FILE)
 
 $(UNIT_TEST_OBJ_FILE) : $(USER_DIR)/$(UNIT_TEST_IMPL_FILE) \
                      $(USER_DIR)/$(PRIMARY_HEADER_FILE) \
-                     $(GTEST_HEADERS)
+                     $(FRAMEWORK_TARGETS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/$(UNIT_TEST_IMPL_FILE)
 
-$(UNIT_TEST_BINARY) : $(STUDENT_OBJ_FILE) $(UNIT_TEST_OBJ_FILE) RetroPrinter.o \
-		   $(GTEST_LIB)
+$(UNIT_TEST_BINARY) : $(STUDENT_OBJ_FILE) $(UNIT_TEST_OBJ_FILE) \
+		   $(FRAMEWORK_TARGETS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -pthread $^ -o $@
