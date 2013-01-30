@@ -1,0 +1,12 @@
+{
+    "lang" : "py",
+    "build_command" : "",
+    "unit_test_command" : "python basic_functions_test.py",
+    "instructor_files" : [
+	"basic_functions_test.py",
+	"RetroPrinter.py"
+    ],
+    "student_files" : [
+        "basic_functions.py"
+    ]
+}

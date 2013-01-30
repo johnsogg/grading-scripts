@@ -1,0 +1,12 @@
+{
+    "assignment" : "Basic Functions",
+    "points" : { 
+	"Four": 1,
+	"AddNumbers" : 1,
+	"RepeatYourself" : 1,
+	"AddOneToAll" : 1,
+	"IsOdd" : 1,
+	"WhichCoin" : 2,
+	"GetPrimesBelow" : 3
+    }
+}
