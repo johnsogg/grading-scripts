@@ -11,7 +11,7 @@ FRAMEWORK_TARGETS	= UTFramework.o
 
 USER_DIR = .
 CPPFLAGS += -I$(GTEST_DIR)/include
-CXXFLAGS += -g -Wall -Wextra
+CXXFLAGS += -g -Wall -Wextra -std=c++0x
 
 # House-keeping build targets.
 
