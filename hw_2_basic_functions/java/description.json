@@ -1,0 +1,13 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. BasicFunctions.java BasicFunctionsTest.java",
+    "unit_test_command" : "java -classpath junit.jar:. BasicFunctionsTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "BasicFunctionsIntf.java",
+        "BasicFunctionsTest.java"
+    ],
+    "student_files" : [
+        "BasicFunctions.java"
+    ]
+}
