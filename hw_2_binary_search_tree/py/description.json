@@ -1,0 +1,12 @@
+{
+    "lang" : "py",
+    "build_command" : "",
+    "unit_test_command" : "python binary_search_tree_test.py --retrograde",
+    "instructor_files" : [
+	"binary_search_tree_test.py",
+	"RetroPrinter.py"
+    ],
+    "student_files" : [
+        "binary_search_tree.py"
+    ]
+}
