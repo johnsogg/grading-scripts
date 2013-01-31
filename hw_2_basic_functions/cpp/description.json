@@ -1,0 +1,15 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./basic_functions_test --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"UTFramework.cpp",
+	"UTFramework.h",
+	"basic_functions.h",
+	"basic_functions_test.cpp"
+    ],
+    "student_files" : [
+        "basic_functions.cpp"
+    ]
+}
