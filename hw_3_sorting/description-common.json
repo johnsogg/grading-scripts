@@ -1,0 +1,9 @@
+{
+    "assignment" : "Sorting Algorithms",
+    "points" : { 
+	"QuickSort": 1,
+	"MergeSort" : 3,
+	"BubbleSort" : 1,
+	"MysterySort" : 1
+    }
+}

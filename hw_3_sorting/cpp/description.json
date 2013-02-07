@@ -1,0 +1,15 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./sorting_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"UTFramework.cpp",
+	"UTFramework.h",
+	"sorting.h",
+	"sorting_driver.cpp"
+    ],
+    "student_files" : [
+        "sorting.cpp"
+    ]
+}

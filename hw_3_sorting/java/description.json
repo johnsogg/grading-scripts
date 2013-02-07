@@ -1,0 +1,13 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. Sorting.java SortingTest.java",
+    "unit_test_command" : "java -classpath junit.jar:. SortingTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "SortingIntf.java",
+        "SortingTest.java"
+    ],
+    "student_files" : [
+        "Sorting.java"
+    ]
+}
