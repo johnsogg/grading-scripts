@@ -1,9 +1,9 @@
 {
     "assignment" : "Sorting Algorithms",
     "points" : { 
-	"QuickSort": 1,
-	"MergeSort" : 3,
-	"BubbleSort" : 1,
-	"MysterySort" : 1
+	"QuickSort": 4,
+	"MergeSort" : 4,
+	"BubbleSort" : 3,
+	"MysterySort" : 4
     }
 }
