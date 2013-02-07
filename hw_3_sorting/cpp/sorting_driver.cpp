@@ -29,44 +29,6 @@ SUITE_BEGIN("Sorting")
 //  IsTrue("Returned A Node", four != NULL, 
 //	 "A Null node was returned by the init_node( ) function.");
 
-TEST_BEGIN("Sanity Check")
-{
-  vector<int> data;
-  data.push_back(5);
-  data.push_back(25);
-  data.push_back(35);
-  data.push_back(25);
-  data.push_back(55);
-
-  vector<int> response;
-  response.push_back(5);
-  response.push_back(25);
-  response.push_back(30);
-  response.push_back(25);
-  response.push_back(5);
-
-  vector<int> good_response;
-  good_response.push_back(5);
-  good_response.push_back(25);
-  good_response.push_back(25);
-  good_response.push_back(35);
-  good_response.push_back(55);
-
-  IsTrue("Has 5", vector_contains(data, 5), 
-	 "data should have 5 in it.");
-  IsTrue("Doesn't have 6", !vector_contains(data, 6), 
-	 "data should not have 6 in it.");
-  IsTrue("Not same vals", !vectors_contain_same(data, response), 
-	 "shouldn't contain same");
-  IsTrue("Same vals", vectors_contain_same(data, good_response), 
-	 "Should have same data");
-  IsTrue("Bad Nondecrease", !is_nondecreasing(response), 
-	 "Response is not sorted but we think it is");
-  IsTrue("Good Nondecrease", is_nondecreasing(good_response), 
-	 "Good response is sorted but we think it isn't.");
-  
-}TEST_END
-
 TEST_BEGIN("QuickSort")
 {
   vector<int> input_data = get_random_data(1000, 500);
