@@ -1,11 +1,11 @@
 {
     "lang" : "py",
-    "build_command" : "",
-    "unit_test_command" : "python linked_list_test.py",
+    "build_command" : "python -m py_compile whatever.py",
+    "unit_test_command" : "python whatever_test.py --retrograde",
     "instructor_files" : [
-        "linked_list_test.py"
+        "whatever_test.py"
     ],
     "student_files" : [
-        "linked_list.py"
+        "whatever.py"
     ]
 }
