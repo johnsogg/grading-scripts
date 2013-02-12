@@ -1,0 +1,11 @@
+{
+    "assignment" : "Python Dictionaries",
+    "points" : { 
+	"EmptyDictionary": 1,
+	"StudentDictionary" : 1,
+	"RealStudentDictionary" : 1,
+	"DictionaryAsList" : 2,
+	"WhichOlder" : 2,
+	"AreSame" : 3
+    }
+}
