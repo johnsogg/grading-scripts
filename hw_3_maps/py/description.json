@@ -1,0 +1,11 @@
+{
+    "lang" : "py",
+    "build_command" : "python -m py_compile maps.py",
+    "unit_test_command" : "python maps_test.py --retrograde",
+    "instructor_files" : [
+        "maps_test.py"
+    ],
+    "student_files" : [
+        "maps.py"
+    ]
+}
