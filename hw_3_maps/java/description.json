@@ -1,0 +1,13 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. Maps.java MapsTest.java",
+    "unit_test_command" : "java -classpath junit.jar:. MapsTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "MapsIntf.java",
+        "MapsTest.java"
+    ],
+    "student_files" : [
+        "Maps.java"
+    ]
+}
