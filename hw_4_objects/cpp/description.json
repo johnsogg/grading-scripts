@@ -1,0 +1,17 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./objects_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"UTFramework.h",
+	"UTFramework.cpp",
+	"objects_driver.cpp",
+	"objects.h"
+    ],
+    "student_files" : [
+        "objects.cpp"
+    ]
+}
