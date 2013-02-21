@@ -1,0 +1,14 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. Objects.java ObjectsTest.java",
+    "unit_test_command" : "java -classpath junit.jar:. ObjectsTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "ObjectsIntf.java",
+        "ObjectsTest.java",
+        "Student.java"
+    ],
+    "student_files" : [
+        "Objects.java"
+    ]
+}
