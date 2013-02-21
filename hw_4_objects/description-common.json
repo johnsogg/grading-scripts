@@ -1,0 +1,11 @@
+{
+    "assignment" : "Intro to Objects",
+    "points" : { 
+	"MakeStudent": 1,
+	"MakeStudentOlder" : 2,
+	"CopyStudent" : 2,
+	"IsOlder" : 1,
+	"IsMusician" : 1, 
+	"IsOlderMusician" : 3
+    }
+}
