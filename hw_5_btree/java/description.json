@@ -1,0 +1,14 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. *.java",
+    "unit_test_command" : "java -classpath junit.jar:. BTreeTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "BTree.java",
+        "BTreeTest.java",
+        "junit.jar"
+    ],
+    "student_files" : [
+        "BTreeImpl.java"
+    ]
+}
