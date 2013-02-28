@@ -1,0 +1,15 @@
+{
+    "assignment" : "B-Trees",
+    "points" : { 
+	"Contains" : 4,
+	"Insert1": 3,
+	"Insert2" : 3,
+	"Insert3" : 3,
+	"Insert4" : 3,
+	"Remove1" : 3,
+	"Remove2" : 3,
+	"Remove3" : 3,
+	"Remove4" : 3,
+	"BulkRandom" : 2
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./btree_unittest --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"UTFramework.cpp",
+	"UTFramework.h",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"btree.h",
+	"btree_unittest.cpp",
+	"btree_unittest_help.cpp",
+	"btree_unittest_help.h"
+    ],
+    "student_files" : [
+        "btree.cpp"
+    ]
+}
