@@ -1,0 +1,13 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. *.java",
+    "unit_test_command" : "java -classpath junit.jar:. PriorityQueueTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "PriorityQueueIntf.java",
+        "PriorityQueueTest.java"
+    ],
+    "student_files" : [
+        "PriorityQueue.java"
+    ]
+}

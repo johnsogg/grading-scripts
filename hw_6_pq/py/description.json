@@ -1,0 +1,12 @@
+{
+    "lang" : "py",
+    "build_command" : "python -m py_compile pq.py",
+    "unit_test_command" : "python pq_test.py --retrograde",
+    "instructor_files" : [
+	"RetroPrinter.py",
+        "pq_test.py"
+    ],
+    "student_files" : [
+        "pq.py"
+    ]
+}
