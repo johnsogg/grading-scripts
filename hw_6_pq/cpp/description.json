@@ -1,0 +1,16 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./pq_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"pq.h",
+	"pq_driver.cpp"
+    ],
+    "student_files" : [
+        "pq.cpp",
+	"pq_struct.h"
+    ]
+}
