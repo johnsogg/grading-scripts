@@ -1,0 +1,15 @@
+{
+    "lang" : "py",
+    "build_command" : "python -m py_compile slug.py",
+    "unit_test_command" : "python slug_test.py --retrograde",
+    "instructor_files" : [
+        "slug_test.py",
+	"race.py",
+	"base_slug.py",
+	"decisions.py",
+	"RetroPrinter.py"
+    ],
+    "student_files" : [
+        "slug.py"
+    ]
+}
