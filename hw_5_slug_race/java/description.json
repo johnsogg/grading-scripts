@@ -1,0 +1,14 @@
+{
+    "lang" : "java",
+    "build_command" : "javac -classpath junit.jar:. *.java",
+    "unit_test_command" : "java -classpath junit.jar:. SlugTest",
+    "instructor_files" : [
+	"RetroPrinter.java",
+        "Race.java",
+        "Decision.java",
+        "SlugTest.java"
+    ],
+    "student_files" : [
+        "Slug.java"
+    ]
+}

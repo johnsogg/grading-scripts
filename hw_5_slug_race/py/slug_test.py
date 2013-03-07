@@ -40,7 +40,7 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
     # now pair the above functions to the retrograde name
     tests = [
-        RetroTest("test_race", "TestRace"),
+        RetroTest("test_race", "Race"),
         ]
     for test in tests:
         suite.addTest(test)
