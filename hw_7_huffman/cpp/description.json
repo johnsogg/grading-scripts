@@ -1,0 +1,18 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./huffman_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"RetroPrinter.cpp",
+	"RetroPrinter.h",
+	"huffman.h",
+	"huffman_help.cpp",
+    "huffman_driver.cpp",
+    "UTFramework.cpp",
+    "UTFramework.h"
+    ],
+    "student_files" : [
+        "huffman.cpp"
+    ]
+}

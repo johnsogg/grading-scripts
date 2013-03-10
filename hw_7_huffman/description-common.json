@@ -1,0 +1,11 @@
+{
+    "assignment" : "Huffman Codes",
+    "points" : { 
+	"HuffTreeSupernode": 1,
+	"HuffTree" : 2,
+	"HuffTable" : 2,
+	"Encode" : 4,
+	"Decode" : 4,
+	"AllInSequence" : 2
+    }
+}
