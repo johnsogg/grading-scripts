@@ -1,0 +1,11 @@
+{
+    "assignment" : "Cellular Automata",
+    "points" : { 
+	"InitPattern": 2,
+	"Run" : 2,
+	"Cycle" : 2,
+	"GetPatternInside" : 2,
+	"GetPatternStart" : 1,
+	"GetPatternEnd" : 1
+    }
+}
