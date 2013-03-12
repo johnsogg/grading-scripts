@@ -1,0 +1,11 @@
+{
+    "lang" : "py",
+    "build_command" : "python -m py_compile automata.py",
+    "unit_test_command" : "python automata_test.py --retrograde",
+    "instructor_files" : [
+        "automata_test.py"
+    ],
+    "student_files" : [
+        "automata.py"
+    ]
+}
