@@ -1,0 +1,11 @@
+{
+    "lang" : "py",
+    "build_command" : "python -m py_compile huffman.py",
+    "unit_test_command" : "python huffman_test.py --retrograde",
+    "instructor_files" : [
+        "huffman_test.py"
+    ],
+    "student_files" : [
+        "huffman.py"
+    ]
+}
