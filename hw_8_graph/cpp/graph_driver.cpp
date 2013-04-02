@@ -128,9 +128,8 @@ Graph mkgraph2() {
 }
 
 Node* find(Graph& graph, string label) {
-  for (vector<Node*>::iterator it = graph.getNodes().begin();
-       it != graph.getNodes().end(); it++) {
-    Node* n = *it;
+  for (size_t i = 0; i < graph.getNodes().size(); i++) {                        
+    Node* n = graph.getNodes()[i];
     if (n->getData() == label) {
       return n;
     }
@@ -222,6 +221,8 @@ TEST_BEGIN("Clear")
 
 TEST_BEGIN("NodeInformation")
 {
+  // this tests setting the search information inside a node like the
+  // color, discovery and finish time, rank, and predecessor
   Graph graph = mkgraph();
   graph.clear();
   Node* a = find(graph, "a");
