@@ -1,0 +1,13 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./cpp_basics_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"cpp_basics.h",
+	"cpp_basics_driver.cpp"
+    ],
+    "student_files" : [
+        "cpp_basics.cpp"
+    ]
+}

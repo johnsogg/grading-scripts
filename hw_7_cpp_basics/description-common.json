@@ -1,0 +1,10 @@
+{
+    "assignment" : "CPP Basics",
+    "points" : { 
+	"GetPower": 2,
+	"GetPercent" : 2,
+	"Strangeness" : 2,
+	"GetSizeForDoubles" : 2,
+	"PeriwinkleVsGamboge" : 2
+    }
+}
