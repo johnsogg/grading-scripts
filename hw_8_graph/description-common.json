@@ -1,0 +1,11 @@
+{
+    "assignment" : "DFS and BFS Graph Algorithms",
+    "points" : { 
+	"Clear": 4,
+	"NodeInformation" : 2,
+	"DFS" : 3,
+	"DFSEdgeClassification" : 2,
+	"BFS" : 2,
+	"BFSUndirected" : 2
+    }
+}

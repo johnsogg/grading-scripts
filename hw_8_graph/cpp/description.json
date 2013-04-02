@@ -1,0 +1,13 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./graph_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"graph.hpp",
+	"graph_driver.cpp"
+    ],
+    "student_files" : [
+        "graph.cpp"
+    ]
+}
