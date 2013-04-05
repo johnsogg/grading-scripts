@@ -1,0 +1,11 @@
+{
+    "lang" : "txt",
+    "build_command" : "echo",
+    "unit_test_command" : "",
+    "instructor_files" : [
+
+    ],
+    "student_files" : [
+        "summary.txt"
+    ]
+}
