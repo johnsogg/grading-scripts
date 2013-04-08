@@ -1,0 +1,12 @@
+{
+    "assignment" : "Put Human-readable assignment name here",
+    "points" : { 
+	"GetAddrOfNum" : 2,
+	"GetDerefVal" : 2,
+	"MakeArr" : 2,
+	"GetProduct" : 3,
+	"MakeFib" : 3,
+	"MakeBurrito" : 3
+    }
+}
+

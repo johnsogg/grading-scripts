@@ -1,0 +1,13 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./pointers_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"pointers.h",
+	"pointers_driver.cpp"
+    ],
+    "student_files" : [
+        "pointers.cpp"
+    ]
+}
