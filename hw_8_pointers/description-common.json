@@ -1,5 +1,5 @@
 {
-    "assignment" : "Put Human-readable assignment name here",
+    "assignment" : "Pointers, Structures, Arrays",
     "points" : { 
 	"GetAddrOfNum" : 2,
 	"GetDerefVal" : 2,
