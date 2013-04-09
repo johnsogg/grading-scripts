@@ -1,5 +1,5 @@
 {
-    "assignment" : "Put Human-readable assignment name here",
+    "assignment" : "Dijkstra's Algorithm",
     "points" : { 
 	"DetectDAG": 5,
 	"Dijkstra General" : 5,
