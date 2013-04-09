@@ -1,0 +1,8 @@
+{
+    "assignment" : "Put Human-readable assignment name here",
+    "points" : { 
+	"DetectDAG": 5,
+	"Dijkstra General" : 5,
+	"Dijkstra Targeted" : 5 
+    }
+}

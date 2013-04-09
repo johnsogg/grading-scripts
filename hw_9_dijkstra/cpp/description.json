@@ -1,0 +1,13 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./dijkstra_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"dijkstra.hpp",
+	"dijkstra_driver.cpp"
+    ],
+    "student_files" : [
+        "dijkstra.cpp"
+    ]
+}
