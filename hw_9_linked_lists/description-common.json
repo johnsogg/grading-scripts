@@ -1,0 +1,13 @@
+{
+    "assignment" : "Linked Lists",
+    "points" : { 
+	"InitNode" : 3,
+	"AppendData" : 4,
+	"Append" : 4,
+	"InsertData" : 5,
+	"Insert" : 4,
+	"Remove" : 5,
+	"Size" : 5
+    }
+}
+
