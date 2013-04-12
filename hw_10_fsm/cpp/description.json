@@ -1,0 +1,13 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./fsm_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"fsm.hpp",
+	"fsm_driver.cpp"
+    ],
+    "student_files" : [
+        "fsm.cpp"
+    ]
+}

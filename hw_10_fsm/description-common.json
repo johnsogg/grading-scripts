@@ -1,0 +1,11 @@
+{
+    "assignment" : "Finite State Machines",
+    "points" : { 
+	"Defaults": 3,
+	"Add States" : 2,
+	"Add Transitions" : 2,
+	"Simple Signals" : 2,
+	"MOONMAN" : 3,
+	"BRAIN BAG": 3
+    }
+}
