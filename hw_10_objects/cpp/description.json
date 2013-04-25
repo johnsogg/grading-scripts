@@ -1,0 +1,13 @@
+{
+    "lang" : "cpp",
+    "build_command" : "make",
+    "unit_test_command" : "./linked_list_driver --retrograde",
+    "instructor_files" : [
+	"Makefile",
+	"linked_list.hpp",
+	"linked_list_driver.cpp"
+    ],
+    "student_files" : [
+        "linked_list.cpp"
+    ]
+}

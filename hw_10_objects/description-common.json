@@ -1,0 +1,15 @@
+{
+    "assignment" : "Linked List (Object Style)",
+    "points" : { 
+    	"InitList": 1,
+	"AppendData": 1,
+	"Append" : 1,
+	"InsertData" : 1,
+	"Insert" : 1,
+	"Remove" : 1,
+	"Size" : 1,
+	"Contains" : 3
+    }
+}
+
+
